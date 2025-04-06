@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
     return (
         <div className="flex items-center justify-center min-h-screen">
-          <div className="card bg-base-100 w-full max-w-sm md:h-full shrink-0 shadow-2xl">
+          <div className="card bg-base-100 w-full max-w-sm md:h-full shrink-0 shadow-2xl border-2 border-b-lime-950">
       <div className="card-body">
         <h2 className="text-center font-bold">Login</h2>
         <fieldset className="fieldset">
