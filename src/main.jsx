@@ -8,6 +8,8 @@ import './index.css'
 import Home from './Component/home/Home';
 import Root from './Component/Root/Root';
 import BannerNext from './Component/home/BannerNext';
+import Login from './Component/Authentication/Login';
+import Signup from './Component/Authentication/Signup';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: '/BannerNext',
         element: <BannerNext />
+      },
+      {
+        path: '/login',
+        element: <Login />
+      },
+      {
+        path: '/signup',
+        element: <Signup />
       }
 
     ]

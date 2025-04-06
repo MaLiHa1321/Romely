@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import backimg from '../../assets/sundorbon.png';
 
 const BannerNext = () => {
@@ -40,7 +41,12 @@ min="2025-01-01" max="2025-12-31"
   title="Must be valid URL" />
 <p className="validator-hint">Must be 2025</p>
           </div>
-          <button className="btn bg-yellow-500 border-none text-black hover:bg-yellow-600">Login</button>
+          <div className="btn bg-yellow-500 border-none text-black hover:bg-yellow-600">
+
+          <Link to='/login'>
+          <button>Login</button>
+          </Link>
+          </div>
         </fieldset>
       </div>
     </div>
