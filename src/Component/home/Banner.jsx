@@ -10,6 +10,7 @@ import img1 from '../../assets/Rectangle 26.png';
 import img2 from '../../assets/Rectangle 27.png';
 import img3 from '../../assets/Sreemongol.png';
 import backimg from '../../assets/sundorbon.png';
+import { Link } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -34,9 +35,11 @@ const Banner = () => {
           headquarters in southeastern Bangladesh. It is famous mostly for its long
           natural sandy beach.
         </p>
-        <button className="btn bg-yellow-500 border-none text-black hover:bg-yellow-600">
+       <Link to='/BannerNext'>
+       <button className="btn bg-yellow-500 border-none text-black hover:bg-yellow-600">
           Booking →
         </button>
+       </Link> 
       </div>
 
       {/* Right Swiper */}
