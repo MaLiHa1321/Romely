@@ -6,10 +6,10 @@ const Login = () => {
         <div className="flex items-center justify-center min-h-screen">
           <div className="card bg-base-100 w-full max-w-sm md:h-full shrink-0 shadow-2xl border-2 border-b-lime-950">
       <div className="card-body">
-        <h2 className="text-center font-bold">Login</h2>
+        <h2 className="text-center font-bold text-2xl">Login</h2>
         <fieldset className="fieldset">
-          <input type="text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black font-black" placeholder="Username or Email" />
-          <input type="password" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black font-black" placeholder="Password" />
+          <input type="text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Username or Email" />
+          <input type="password" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Password" />
           <div className="flex justify-between space-y-3">
             <div className="flex gap-2 items-center">
             <input type="checkbox" defaultChecked className="checkbox" />

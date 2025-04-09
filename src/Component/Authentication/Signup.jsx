@@ -7,7 +7,7 @@ const Signup = () => {
             <div className="flex items-center justify-center min-h-screen">
                 <div className="card bg-base-100 w-full max-w-sm md:h-full shrink-0 shadow-2xl border-2 border-b-lime-950">
                     <div className="card-body">
-                        <h2 className="text-center font-bold">Create an Account</h2>
+                        <h2 className="text-center font-bold text-2xl">Create an Account</h2>
                         <fieldset className="fieldset">
                             <input type="text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black " placeholder="First name" />
                             <input type="Text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black " placeholder="Last name" />
