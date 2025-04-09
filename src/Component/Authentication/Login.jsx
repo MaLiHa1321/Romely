@@ -8,8 +8,8 @@ const Login = () => {
       <div className="card-body">
         <h2 className="text-center font-bold text-2xl">Login</h2>
         <fieldset className="fieldset">
-          <input type="text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Username or Email" />
-          <input type="password" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Password" />
+          <input type="email" name="email"  className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Email" />
+          <input type="password" name="password" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Password" />
           <div className="flex justify-between space-y-3">
             <div className="flex gap-2 items-center">
             <input type="checkbox" defaultChecked className="checkbox" />

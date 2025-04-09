@@ -2,23 +2,35 @@ import { Link } from "react-router-dom";
 
 
 const Signup = () => {
+   
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        const form = new FormData(e.target);
+        const f_name = form.get('First_name');
+        const l_name = form.get('last_name');
+        const email = form.get('email');
+        const pass = form.get('pass');
+        const c_pass = form.get("C_pass");
+
+        console.log({f_name,l_name,email,pass,c_pass})
+    }
     return (
         <div>
             <div className="flex items-center justify-center min-h-screen">
                 <div className="card bg-base-100 w-full max-w-sm md:h-full shrink-0 shadow-2xl border-2 border-b-lime-950">
                     <div className="card-body">
                         <h2 className="text-center font-bold text-2xl">Create an Account</h2>
-                        <fieldset className="fieldset">
-                            <input type="text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black " placeholder="First name" />
-                            <input type="Text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black " placeholder="Last name" />
-                            <input type="text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Username or Email" />
-                            <input type="text" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Password" />
-                            <input type="password" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Confirm Password" />
+                        <form className="form" onSubmit={handleSubmit}>
+                            <input type="text" name="First_name" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black " placeholder="First name" />
+                            <input type="Text" name="last_name" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black " placeholder="Last name" />
+                            <input type="email" name="email" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder=" Email" />
+                            <input type="text" name="password" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Password" />
+                            <input type="password" name="C_pass" className="input border-0 border-b-2 focus:outline-none focus:border-b-neutral  bg-transparent rounded-none placeholder:text-black" placeholder="Confirm Password" />
 
 
                             <button className="btn bg-yellow-500 border-none text-black hover:bg-yellow-600 mt-4">Signup</button>
                             <p className="mt-2 justify-center items-center">Already have an account? <Link to='/login'><span className="text-yellow-500">Login</span></Link></p>
-                        </fieldset>
+                        </form>
                         <div className="divider">OR</div>
                         <button className="btn bg-[#1A77F2] text-white border-[#005fd8] rounded-3xl">
                             <svg aria-label="Facebook logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z"></path></svg>
