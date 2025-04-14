@@ -1,6 +1,6 @@
 
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 
 
@@ -18,7 +18,8 @@ const Signup = () => {
         const c_pass = form.get("C_pass");
 
         createNewUser(email,pass)
-        .then(result => { setUser(result.user)
+        .then(result => { setUser(result.user);
+         <Navigate to='/' />
         }
         )
         .catch(err => console.log(err))
