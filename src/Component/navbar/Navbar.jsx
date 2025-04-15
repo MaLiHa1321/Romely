@@ -70,7 +70,6 @@ const Navbar = () => {
                 <li>
                   <Link to="/profile" className="justify-between">
                     Profile
-                    <span className="badge">{user?.email}</span>
                   </Link>
                 </li>
                 <li>
